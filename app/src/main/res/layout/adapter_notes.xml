@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clickItem"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#FFD3D3D3"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvnotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#FF000000"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvdocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is my favourite Place"
+                android:textColor="#FF000000"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/tvShowNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A line is a one-dimensional figure, which has length but no width. A line is made of a set of points which is extended in opposite directions infinitely. It is determined by two points in a two-dimensional plane."
+                android:textColor="#FF000000"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/deleteNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete note"
+                    android:layout_centerHorizontal="true"/>
+                <ImageButton
+                    android:id="@+id/shareNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
